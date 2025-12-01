@@ -4,13 +4,13 @@ import pandas as pd
 import numpy as np
 import joblib
 
-st.set_page_config(page_title="EB-2 PERM Approval Probability Estimator (FY2022-2024)", layout="wide")
+st.set_page_config(page_title="EB-2 PERM Approval Probability Estimator (FY2022–2024)", layout="wide")
 
 # Load model
 model = joblib.load("model_perm_best.pkl")
 
-st.title("EB-2 PERM Approval Probability Estimator (FY2024)")
-st.write("This tool estimates the probability that a PERM case will be certified based on FY2024 patterns.")
+st.title("EB-2 PERM Approval Probability Estimator (FY2022–2024)")
+st.write("This tool estimates the probability that a PERM case will be certified based on patterns from FY2022–2024 PERM disclosure data.")
 
 # ----- User Inputs -----
 pw_soc_code = st.text_input("Prevailing Wage SOC Code", "15-1252")
