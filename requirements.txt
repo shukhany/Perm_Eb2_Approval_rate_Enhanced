@@ -1,0 +1,12 @@
+streamlit==1.51.0
+pandas
+numpy
+scikit-learn==1.5.1
+joblib
+altair
+
+pyarrow
+protobuf
+
+from google.colab import files
+files.download("requirements.txt")
