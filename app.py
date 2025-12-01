@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import joblib
 
-st.set_page_config(page_title="EB-2 PERM Approval Probability Estimator (FY2024)", layout="wide")
+st.set_page_config(page_title="EB-2 PERM Approval Probability Estimator (FY2022-2024)", layout="wide")
 
 # Load model
 model = joblib.load("model_perm_best.pkl")
